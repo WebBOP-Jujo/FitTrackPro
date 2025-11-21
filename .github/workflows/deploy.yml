@@ -26,7 +26,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # Eliminamos la línea de caché para evitar el error del lockfile
 
       - name: Install dependencies
         run: npm install
